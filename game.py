@@ -30,13 +30,16 @@ while True:
         print(f'Sorry, {user_guess} is not a valid number. Please try again.')
         continue
 
-    # Check is user guess is between 1 and 100
-    if user_guess < 1 and user_guess > 100:
-        print('Please guess a number between 1 and 100: ')
-        continue
-
-    # Store number of user attempts(guesses)
+    # Store number of valid user guesses
     num_guesses += 1
 
+    if user_guess < number:
+        print('Oops, your guess is too low. Please try again: ')
 
+    elif user_guess > number:
+        print("Nope, you're guess is too high. Please try again. ")
 
+    else:
+        print(f"Great job, {user_name}!")
+        print(f"You found my number in {num_guesses} guesses.")
+        break
