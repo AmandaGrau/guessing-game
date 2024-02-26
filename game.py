@@ -4,11 +4,11 @@ from random import randint
 
 # Game Overview:
 # Computer chooses a random number between 1-100 
-# Ask the user to guess the number 
-# Once the user guesses, the computer tell tells the user if their guess is too low or too high 
+# User is asked to guess the number 
+# Once the user guesses, the computer tells the user if their guess is too low or too high 
 # The game is over once the user guesses the random number
 
-# Store number of user guesses
+# Store number of user guesses(attempts)
 num_guesses = 0
 
 # Random number between 1 and 100
